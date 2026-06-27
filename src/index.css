@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --font-outfit: 'Outfit', sans-serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-young: 'Young Serif', serif;
+  --font-newake: 'Newake', sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom animations for Hero side decorations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-40px, 20px, 0) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(40px, 20px, 0) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(3deg);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Partners Marquee animations */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 30s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 30s linear infinite;
+}
+
+/* Fade-in animation for mobile nav dropdown */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}

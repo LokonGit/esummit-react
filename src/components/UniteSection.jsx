@@ -59,7 +59,7 @@ export default function UniteSection() {
       </div>
 
       {/* Left 3D Staircase */}
-      <div className="absolute bottom-[20px] sm:bottom-[30px] md:bottom-[45px] left-[-55px] sm:left-[-35px] md:left-[-10px] w-[140px] sm:w-[200px] md:w-[250px] lg:w-[280px] aspect-[410/479] z-10 pointer-events-none select-none hover:scale-[1.03] transition-transform duration-500 ease-out">
+      <div className="absolute bottom-[20px] sm:bottom-[30px] md:bottom-[30px] left-[-55px] sm:left-[-35px] md:left-[-10px] w-[140px] sm:w-[200px] md:w-[250px] lg:w-[280px] aspect-[410/479] z-10 pointer-events-none select-none hover:scale-[1.03] transition-transform duration-500 ease-out">
         <img
           src="/asset_246.png"
           alt="3D Staircase Left"

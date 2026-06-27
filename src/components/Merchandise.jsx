@@ -2,7 +2,7 @@ export default function Merchandise() {
   return (
     <section
       id="merchandise"
-      className="relative w-full overflow-hidden bg-[#ea3d5d] pt-[72px] sm:pt-[96px] md:pt-[120px] pb-[72px] sm:pb-[96px] md:pb-[120px] z-20"
+      className="relative w-full  bg-[#ea3d5d] pt-[72px] sm:pt-[96px] md:pt-[120px] pb-[72px] sm:pb-[96px] md:pb-[120px] z-20"
     >
       {/* Background Mask Overlay */}
       <div
@@ -30,7 +30,7 @@ export default function Merchandise() {
       </div>
 
       {/* Right Character */}
-      <div className="absolute right-[-16px] top-[-7%] sm:top-[17%] md:top-[1%] w-[320px] sm:w-[280px] md:w-[420px] lg:w-[580px] lg:h-[790px] aspect-[580/790] pointer-events-none select-none z-10">
+      <div className="absolute right-[-16px] top-[-7%] sm:top-[17%] md:top-[1%] w-[320px] sm:w-[280px] md:w-[420px] lg:w-[580px] lg:h-[790px] aspect-[580/790] pointer-events-none select-none md:z-10 z-12">
         <img src="/asset_238.png" alt="Stylized character right" className="w-full h-full object-contain object-right-top" />
       </div>
 

@@ -23,7 +23,7 @@ export default function Speakers() {
       <div className="relative w-full max-w-[1440px] mx-auto z-20 px-6 sm:px-12 md:px-16">
 
         {/* Section Header */}
-        <div className="flex flex-col items-center justify-center mb-16 md:mb-24 -mt-50 select-none">
+        <div className="flex flex-col items-center justify-center mb-16 md:mb-24 -mt-20 select-none">
           <h2 className="text-[40px] sm:text-[56px] md:text-[72px] font-outfit font-black text-[#171717] tracking-tight leading-none text-center">
             Voices That Matter
           </h2>

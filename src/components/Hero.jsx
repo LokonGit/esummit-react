@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6 py-12 overflow-hidden">
+    <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-0 py-12 ">
 
       {/* Main Content Container */}
       <div className="relative z-10 max-w-3xl flex flex-col items-center gap-6 mt-[-80px] lg:mt-[-40px] pb-36 lg:pb-0">
@@ -9,7 +9,7 @@ export default function Hero() {
           <img
             src="/asset_007.png"
             alt="Hi-Res Annual Design Convergence"
-            className="w-full h-full object-contain"
+            className="w-full px-6 h-full object-contain"
           />
         </div>
 
@@ -38,7 +38,7 @@ export default function Hero() {
         <img
           src="/asset_115.png"
           alt="Flower collage left"
-          className="w-full h-full object-contain object-left-bottom"
+          className="w-full h-full hidden md:block object-contain object-left-bottom"
         />
       </div>
 
@@ -47,9 +47,14 @@ export default function Hero() {
         <img
           src="/asset_109.png"
           alt="Hand holding butterflies right"
-          className="w-full h-full object-contain object-right-bottom"
+          className="w-full hidden md:block h-full object-contain object-right-bottom"
         />
       </div>
+      <img
+        src="/asset_268.png"
+        alt=""
+        className="block md:hidden absolute left-1/2 -translate-x-1/2 -bottom-33 w-screen h-auto  z-300"
+      />
     </section>
   )
 }
